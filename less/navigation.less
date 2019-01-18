@@ -17,6 +17,23 @@
             text-decoration: none;
             font-weight: bold;
             color: @waterloo;
+            &:hover {
+                #animation-bundle .keyframe-animation(pulse; {
+                    from {
+                    transform: scale3d(1, 1, 1);
+                    }
+                
+                    50% {
+                    transform: scale3d(1.2, 1.2, 1.2);
+                    }
+                
+                    to {
+                    transform: scale3d(1, 1, 1);
+                    }
+                });
+                #animation-bundle .animation-duration(0.5s);
+                #animation-bundle .animation-name(pulse);
+            }
         }
     }
 }

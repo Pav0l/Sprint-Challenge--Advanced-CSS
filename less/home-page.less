@@ -62,9 +62,13 @@
       }
 
       .btn {
-        // Create a hover state that swaps the background color and font color
-        //  of the base button styles.
-        border: 2px solid pink;
+        #btn-bundle .btn-border-bg();
+        #btn-bundle .btn-text(1.8rem);
+        width: 30%;
+        &:hover {
+          #btn-bundle .btn-border-bg(1px; solid; @btn-bg-color);
+          background-color: @white;
+        }
       }
     }
 

@@ -184,6 +184,21 @@ a {
   font-weight: bold;
   color: #81848E;
 }
+.navigation-content nav a:hover {
+  animation-duration: 0.5s;
+  animation-name: pulse;
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -240,7 +255,24 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border: 2px solid pink;
+  background-color: #22283A;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 3% 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 30%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #22283A;
+  border: 1px solid #22283A;
+  color: #22283A;
+  border-radius: 5px;
+  padding: 3% 0;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
