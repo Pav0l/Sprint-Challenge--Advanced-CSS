@@ -170,6 +170,11 @@ a {
   align-items: center;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .navigation-content {
+    padding-top: 2%;
+  }
+}
 .navigation-content h1 {
   padding: 1% 0;
 }
@@ -180,9 +185,14 @@ a {
   align-items: center;
   padding: 1% 0;
 }
+@media (max-width: 500px) {
+  .navigation-content nav {
+    padding: 1% 2% 2%;
+    justify-content: space-evenly;
+  }
+}
 .navigation-content nav a {
   text-decoration: none;
-  font-weight: bold;
   color: #81848E;
   padding: 0 1%;
 }
@@ -199,6 +209,11 @@ a {
   }
   to {
     transform: scale3d(1, 1, 1);
+  }
+}
+@media (max-width: 500px) {
+  .navigation-content nav a:hover {
+    animation-duration: 0s;
   }
 }
 footer {
