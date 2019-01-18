@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive layout means that there are several versions of the layout which are displayed based on the screen size of the viewer. 
+Adaptive web design relies on predefined screen sizes to adapt itself to resolutions across devices.
+Responsive layout addapts to all screen sizes. Depending on the screen size, elements will stretch or shrink accordingly, because responsive units are used throughout the site. You can set up media queries, which can divide the layout for different screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means you design and develop the website for mobile device first and then expand the design layout and code for bigger screens. (so called Progressive engancement).
+Desktop first means the opposite. You design and develop the page for desktop screen first and then downgrade the layout and code for smaller and smaller screens (graceful degradation).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default font-size of root element (html) is 16px. Setting font-size to 62.5% makes it (16 * 0.625) 10px. rem units are relative to font-size of root element. With font-size 62.5%, 1 rem is equal to 10px. This makes it easier for developer to calculate relative lengths from rem to pixels.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessor is a program that let's you write code that is not CSS and then compile it into CSS. This allows you to use features which are not possible in vanilla CSS like mixins, variables, functions, nesting, etc... 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favourite concepts -  nesting and mixins. Nesting makes the code more understandable. Mixins avoid redundant repetition.
+Most trouble is understanding variables scoping in LESS.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

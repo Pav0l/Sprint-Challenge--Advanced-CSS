@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -16,12 +17,22 @@
 
 <body>
 
- <!-- navigation code here -->
+  <div class="navigation-content">    
+    <h1>SpaceWalkers</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Sign In</a>
+    </nav>
+  </div>
 
   <div class="container home">
-
     <header class="intro">
-       <!-- image code here -->
+
+      <img src="img/main-header.png" alt="globe-shot">
 
       <h2>Lift Off</h2>
     
@@ -34,8 +45,7 @@
         <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
-    <section class="visit-planets">
-     
+    <section class="visit-planets">     
       <h3>Can We Visit Planets?</h3>
     
       <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
@@ -51,7 +61,7 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
+        <div class="btn" onclick='show_form("form1")'>
           Sign Up
         </div>
       </div>
@@ -59,13 +69,45 @@
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
-
     </section>
+
+    <section class="contact-form" id="form1">
+        <h3>Spacewalkers Magazine subscription</h3>
+  
+        <div class="contact-container">
+            <form action="#" method="POST">
+            <label for="fname">Name</label>
+            <input type="text" id="name1" name="name" placeholder="Enter your name...">
+        
+            <label for="subject">Email</label>
+            <input type="email" name="email" placeholder="Enter your email...">  
+          
+            <div class="btn">
+                Submit
+            </div>
+            </form>
+        </div>
+      </section>
+
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
-
   </div>
+
+  <!-- This will be in separate JS file in the future. -->
+<script type="application/javascript">
+
+  function show_form(id) {
+    let a = document.getElementById(id);
+    if (a.style.display == 'block' || a.style.display == 'inline-block') {
+      a.style.display = 'none';
+    } else {
+      a.style.display = 'block';
+    }
+  }
+
+</script> <!-- End of JS file -->
+
 </body>
 </html>

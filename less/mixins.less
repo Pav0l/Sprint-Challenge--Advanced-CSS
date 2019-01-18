@@ -1,1 +1,30 @@
-// Mixins Here
+#btn-bundle() {
+    .btn-border-bg(@border-px: 1px; @style: solid; @color: @white) {
+        background-color: @btn-bg-color;
+        border: @border-px @style @color;
+        color: @color;
+        border-radius: 5px;
+        padding: 3% 0;
+    }
+    .btn-text(@size: 1rem; @align: center; @cursor: pointer) {
+        text-align: @align;
+        cursor: @cursor;
+        font-size: @size;
+        font-weight: bold;
+    }
+}
+
+// Animations
+#animation-bundle() {
+    .keyframe-animation(@name; @arguments) {
+        @keyframes @name {
+            @arguments();
+        }
+    }
+    .animation-duration(@time) {
+        animation-duration: @time
+    }
+    .animation-name(@name) {
+        animation-name: @name;
+    }
+}
