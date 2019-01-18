@@ -257,7 +257,7 @@ footer {
   .home .space-images img {
     width: 100%;
     max-width: 90%;
-    margin: 2% auto;
+    margin: 3% auto;
   }
   .home .space-images img.sky,
   .home .space-images img.launch {
@@ -331,12 +331,13 @@ footer {
     margin-top: 4%;
     width: 100%;
   }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 4% 0;
+  }
   .home .walk .walk-img {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-  }
-  .home .walk .btn {
-    width: 100%;
   }
 }
